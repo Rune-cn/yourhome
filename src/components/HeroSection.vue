@@ -13,7 +13,7 @@ function pretty(u) {
     <div class="avatar-row">
       <img class="avatar" src="/avatar.png" alt="头像" width="112" height="112" />
       <div class="avatar-side">
-        <h1 class="serif">Ilyfalt</h1>
+        <h1 class="serif">Rune</h1>
         <p class="sub">
           一个由 <b>AI</b> 驱动的人类。这里是个人主页：入口、导航、以及一些随手做的小工具。
         </p>

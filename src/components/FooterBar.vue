@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <span>Ilyfalt · 由 Vue 构建的纯静态主页</span>
+    <span>Rune · 由 Vue 构建的纯静态主页</span>
     <span>
       <a href="https://github.com/Rune-cn/" target="_blank" rel="noopener">GitHub</a>
       ·
