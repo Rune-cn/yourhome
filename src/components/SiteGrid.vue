@@ -8,7 +8,7 @@ function pretty(u) {
 
 <template>
   <main class="grid-wrap">
-    <p class="section-label">精选站点与工具</p>
+    <p class="section-label">网站目录</p>
     <div class="grid">
       <a
         v-for="(s, i) in sites"
@@ -23,7 +23,7 @@ function pretty(u) {
           <span class="idx" aria-hidden="true">{{ String(i + 1).padStart(2, '0') }}</span>
           {{ s.name }}
         </h3>
-        <p>{{ s.desc }}</p>
+        
         <span class="url">{{ pretty(s.url) }}</span>
       </a>
     </div>

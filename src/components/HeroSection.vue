@@ -20,7 +20,7 @@ function pretty(u) {
         <nav class="media" aria-label="个人媒体">
           <a v-for="m in media" :key="m.name" :href="m.url" target="_blank" rel="noopener">
             <svg :viewBox="m.viewBox || '0 0 16 16'" fill="currentColor" aria-hidden="true">
-              <path :d="m.icon" />
+              <path :d="m.icon" :fill-rule="m.fillRule || 'nonzero'" />
             </svg>
             <span>{{ m.name }}</span>
           </a>
