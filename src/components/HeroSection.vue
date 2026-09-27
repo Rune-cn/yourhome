@@ -10,10 +10,15 @@ function pretty(u) {
   <header class="hero">
     <span class="dot" aria-hidden="true"></span>
     <div class="rule" aria-hidden="true"></div>
-    <h1 class="serif">Ilyfalt</h1>
-    <p class="sub">
-      一个由 <b>AI</b> 驱动的人类。这里是个人主页：入口、导航、以及一些随手做的小工具。
-    </p>
+    <div class="avatar-row">
+      <img class="avatar" src="/avatar.png" alt="头像" width="112" height="112" />
+      <div class="avatar-side">
+        <h1 class="serif">Ilyfalt</h1>
+        <p class="sub">
+          一个由 <b>AI</b> 驱动的人类。这里是个人主页：入口、导航、以及一些随手做的小工具。
+        </p>
+      </div>
+    </div>
     <nav class="media" aria-label="个人媒体">
       <a v-for="m in media" :key="m.name" :href="m.url" target="_blank" rel="noopener">
         <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
@@ -39,22 +44,42 @@ function pretty(u) {
   width: 56px;
   height: 4px;
   background: var(--accent);
-  margin-bottom: 2.2rem;
+  margin-bottom: 2.4rem;
   border-radius: 2px;
 }
 
-h1 {
-  font-size: clamp(3rem, 11vw, 7rem);
+.avatar-row {
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+  flex-wrap: wrap;
+}
+
+.avatar {
+  width: clamp(84px, 18vw, 128px);
+  height: clamp(84px, 18vw, 128px);
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--line);
+  flex: none;
+}
+
+.avatar-side h1 {
+  font-size: clamp(2.4rem, 8vw, 5rem);
   font-weight: 700;
   letter-spacing: 0.01em;
-  line-height: 1.02;
+  line-height: 1.05;
+}
+
+.avatar-side .sub {
+  margin-top: 0.7rem;
 }
 
 .sub {
   margin-top: 1.4rem;
   max-width: 34em;
   color: var(--text-dim);
-  font-size: clamp(1rem, 2.4vw, 1.25rem);
+  font-size: clamp(0.95rem, 2.2vw, 1.15rem);
 }
 
 .sub b {

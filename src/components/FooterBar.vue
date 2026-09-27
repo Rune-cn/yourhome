@@ -2,9 +2,11 @@
   <footer>
     <span>Ilyfalt · 由 Vue 构建的纯静态主页</span>
     <span>
-      <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://github.com/Rune-cn/" target="_blank" rel="noopener">GitHub</a>
       ·
-      <a href="mailto:hello@example.com">hello@example.com</a>
+      <a href="https://afdian.com/a/CNRune" target="_blank" rel="noopener">爱发电</a>
+      ·
+      <a href="https://space.bilibili.com/3546928530852407" target="_blank" rel="noopener">bilibili</a>
     </span>
   </footer>
 </template>
